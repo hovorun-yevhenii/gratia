@@ -1,0 +1,28 @@
+.title {
+  position: relative;
+  text-align: center;
+  padding: 1.3rem 0 2.4rem;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font: 17.6rem/.71 $ff-selima;
+    color: $main-dark;
+    opacity: 0.05;
+  }
+
+  &__main {
+    margin-bottom: .5rem;
+    font: bold 3rem/1.76 $ff-montserrat;
+    color: $main-dark;
+    text-transform: uppercase;
+  }
+
+  &__caption {
+    font: 1.5rem/1.5 $ff-crimson;
+    color: $blue-grey;
+  }
+}

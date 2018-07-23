@@ -1,0 +1,97 @@
+.my-modal {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(250,250,250,.75) url(https://www.transparenttextures.com/patterns/double-lined.png);
+
+  &__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100vw - 50px);
+    max-width: 900px;
+    max-height: 95vh;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #fff;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(50% - 32px);
+    padding: 16px;
+
+    .title__main {
+      position: relative;
+      margin-bottom: 4rem;
+
+      &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1rem;
+        margin: auto;
+        content: '';
+        width: 2.7rem;
+        height: 1px;
+        background-color: $light-gray;
+      }
+    }
+
+    .components {
+      display: flex;
+      padding: 50px 0;
+      border: 1px solid rgba(138, 143, 156, .25);
+      border-left: none;
+      border-right: none;
+
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        font: 1.5rem $ff-montserrat;
+        color: $main-dark;
+      }
+
+      &__list {
+        padding: 16px;
+        font: 1rem/2.25 $ff-montserrat-reg;
+        color: #8b909d;
+      }
+    }
+  }
+
+  &__cost {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  &__price {
+    font: 4.2rem $ff-montserrat;
+    color: #829c2c;
+  }
+
+  &__total-cost {
+    font: 1.5rem $ff-crimson;
+    color: $blue-grey;
+  }
+}

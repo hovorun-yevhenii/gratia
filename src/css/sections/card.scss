@@ -1,0 +1,46 @@
+.card {
+  max-width: 562px;
+  margin: 16px;
+  box-shadow: 0 0 150px 0 $light-gray;
+  transition: .2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 290px; /* max?*/
+    margin-bottom: 32px;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .title {
+    padding: 16px;
+  }
+
+  .title__main {
+    position: relative;
+    margin-bottom: 4rem;
+    color: $main-dark;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1.8rem;
+      margin: auto;
+      content: '';
+      width: 2.7rem;
+      height: 1px;
+      background-color: $light-gray;
+    }
+  }
+}

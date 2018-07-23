@@ -1,0 +1,18 @@
+.menu {
+  padding: 90px 0;
+
+  .title {
+    margin-bottom: 90px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  .card {
+    flex-basis: 30%;
+  }
+}

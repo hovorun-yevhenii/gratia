@@ -1,0 +1,99 @@
+.form {
+
+  .day     {grid-area: day   }
+  .month   {grid-area: month }
+  .year    {grid-area: year  }
+  .hour    {grid-area: hour  }
+  .amount  {grid-area: numb  }
+  .name    {grid-area: name  }
+  .tel     {grid-area: tel   }
+  .email   {grid-area: email }
+  .menu    {grid-area: menu  }
+  .message {grid-area: msg   }
+  .send    {grid-area: send  }
+
+  .booking {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(20px, 105px));
+    grid-template-rows: repeat(3, 65px) auto 65px;
+    grid-gap: 36px;
+    grid-template-areas:
+            "day   day   month month year  year  hour  hour  hour  numb  numb  numb  "
+            "name  name  name  name  name  name  tel   tel   tel   tel   tel   tel   "
+            "email email email email email email menu  menu  menu  menu  menu  menu  "
+            "msg   msg   msg   msg   msg   msg   msg   msg   msg   msg   msg   msg   "
+            "send  send  send  send  send  send  send  send  send  send  send  send  ";
+  }
+
+  @media (max-width: 1050px) {
+    .booking {
+      grid-gap: 18px;
+    }
+
+    .field {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .booking {
+      grid-template-columns: repeat(6, minmax(20px, 200px));
+      grid-template-rows: repeat(5, 50px) 65px 120px 60px;
+      grid-template-areas:
+              "day   day   month month year  year  "
+              "hour  hour  hour  numb  numb  numb  "
+              "name  name  name  name  name  name  "
+              "tel   tel   tel   tel   tel   tel   "
+              "email email email email email email "
+              "menu  menu  menu  menu  menu  menu  "
+              "msg   msg   msg   msg   msg   msg   "
+              "send  send  send  send  send  send  ";
+    }
+  }
+
+  .field{
+    box-sizing: border-box;
+    padding: 23px;
+    color: #151b28;
+    font-weight: bold;
+    box-shadow: 0 0 95px 0 #e5e6eb;
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $main-tan;
+    }
+
+    &::placeholder {
+      color: $main-dark;
+      text-align: center;
+    }
+  }
+
+  .message {
+    resize: none;
+
+    &::placeholder {
+      color: rgba(21, 27, 41, 0.3);
+      text-align: left;
+    }
+  }
+
+  .menu {
+    color: $main-tan;
+    background-color: $main-dark;
+    cursor: pointer;
+  }
+
+  .send {
+    background-color: $main-tan;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: lighten($main-tan, 5%);
+    }
+  }
+}

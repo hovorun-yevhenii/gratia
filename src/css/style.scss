@@ -1,0 +1,26 @@
+@import "helpers/reset";
+@import "helpers/vars";
+@import "helpers/swiper";
+
+@import "sections/header";
+@import "sections/title";
+@import "sections/footer";
+@import "sections/card";
+@import "sections/my-modal";
+
+@import "sections/main-slider";
+@import "sections/offers";
+@import "sections/details";
+@import "sections/promo";
+
+@import "sections/menu";
+
+@import "sections/form";
+
+html {
+  font-size: 14px;
+}
+
+.container {
+  padding: 32px;
+}

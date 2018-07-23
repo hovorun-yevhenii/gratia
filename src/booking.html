@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking</title>
+    <link rel="icon" type="image/png" href="./img/fav.png"/>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+
+<!-- =================================================================================== -->
+<!--                                    HEADER                                           -->
+<!-- =================================================================================== -->
+
+<div class="header header--dark">
+    <div class="header__logo">
+        <a href="./index.html" class="header__link-wrapper">
+            <div class="header__picture">
+                <img src="./img/logo-fork.png" alt="logo">
+            </div>
+            <span class="header__brand">Gratia</span>
+        </a>
+    </div>
+    <ul class="header__nav">
+        <li class="header__nav-item"><a href="#" class="header__link">About</a></li>
+        <li class="header__nav-item"><a href="./menu.html" class="header__link">Menu</a></li>
+        <li class="header__nav-item"><a href="#" class="header__link">Gallery</a></li>
+        <li class="header__nav-item"><a href="#" class="header__link">Contact</a></li>
+    </ul>
+</div>
+
+<!-- =================================================================================== -->
+<!--                                   FORM                                              -->
+<!-- =================================================================================== -->
+
+<div class="container">
+    <div class="form">
+        <div class="title form__title">
+            <p class="title__background">Gratia</p>
+            <h2 class="title__main">BOOK A TABLE</h2>
+            <p class="title__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <form class="booking">
+            <input type="text"   required class="day field"    placeholder="DD" />
+            <input type="text"   required class="month field"  placeholder="MM" />
+            <input type="text"   required class="year field"   placeholder="YYYY" />
+            <input type="text"   required class="hour field"   placeholder="HOUR" />
+            <input type="number" required class="amount field" placeholder="NUMBER OF PEOPLE" />
+            <input type="text"   required class="name field"   placeholder="FIRST NAME AND LAST NAME" />
+            <input type="tel"    required class="tel field"    placeholder="PHONE NUMBER" />
+            <input type="email"  required class="email field"  placeholder="E-MAIL" />
+
+            <select class="menu field">
+                <option value="menu" disabled selected>PREPARE MENU</option>
+                <option value="Main dishes">Main dishes</option>
+                <option value="Soups">Soups</option>
+                <option value="Hamburgers">Hamburgers</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+
+            <textarea rows="10" class="message field" placeholder="Your message.."></textarea>
+
+            <button type="submit" class="send field">SEND</button>
+        </form>
+    </div>
+</div>
+
+<!-- =================================================================================== -->
+<!--                                    FOOTER                                           -->
+<!-- =================================================================================== -->
+
+<div class="footer">
+    <div class="footer__logo"></div>
+    <div class="footer__caption">Gratia Restaurant</div>
+    <ul class="footer__socials">
+        <li><a class="footer__link footer__link--facebook" href="#"></a></li>
+        <li><a class="footer__link footer__link--twitter" href="#"></a></li>
+        <li><a class="footer__link footer__link--insta" href="#"></a></li>
+    </ul>
+</div>
+
+<script src="./public/script.js"></script>
+</body>
+</html>

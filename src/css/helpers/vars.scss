@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../../font/montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../../font/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'CrimsonText-Italic';
+  src: url(../../font/CrimsonText/CrimsonText-Italic.ttf);
+}
+
+@font-face {
+  font-family: Selima;
+  src: url(../../font/selima/selima.otf);
+}
+
+/*
+    14 - 0.875
+    16 - 1
+    18 - 1.125
+    24 - 1.5
+    48 - 3
+    72 - 4.5
+    128 - 8
+    183.5 - 11.4375
+*/
+
+$ff-montserrat: 'Montserrat-Bold', serif;
+$ff-montserrat-reg: 'Montserrat-Regular', serif;
+$ff-crimson: 'CrimsonText-Italic', serif;
+$ff-selima: Selima, fantasy, sefif;
+
+
+$main-dark: #151b28;
+$light-gray: #e6e6e6;
+$blue-grey: #8b909d;
+$main-tan: #d89b64;
+
