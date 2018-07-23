@@ -9,13 +9,8 @@
   background: rgba(250,250,250,.75) url(https://www.transparenttextures.com/patterns/double-lined.png);
 
   &__wrapper {
-    position: relative;
-    box-sizing: border-box;
-    //TODO помоему max-width будет достаточно
-    width: calc(100vw - 50px);
     max-width: 900px;
-    //TODO а с такой высотой на респонзиве будут проблемы, модалки вообще стоит разгонять падингами
-    max-height: 95vh;
+    max-height: 90%;
     display: flex;
     flex-flow: row wrap;
     background-color: #fff;
@@ -39,7 +34,7 @@
     justify-content: center;
     align-items: center;
     flex-basis: calc(50% - 32px);
-    padding: 16px;
+    padding: 0 16px;
 
     .title__main {
       position: relative;

@@ -640,11 +640,6 @@ button.swiper-pagination-bullet {
       .header--dark .header__brand--is-active,
       .header--dark .header__link--is-active {
         color: #d89b64; }
-  .header__logo {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center; }
   .header__picture {
     display: -webkit-box;
     display: flex;
@@ -772,15 +767,11 @@ button.swiper-pagination-bullet {
       transform: scale(1.2); }
 
 .card {
-  max-width: 562px;
   margin: 16px;
   box-shadow: 0 0 150px 0 #e6e6e6;
   -webkit-transition: .2s;
   transition: .2s;
   cursor: pointer; }
-  .card:hover {
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02); }
   .card__image-wrapper {
     display: -webkit-box;
     display: flex;
@@ -789,11 +780,10 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
     justify-content: center;
     height: 290px;
-    /* max?*/
     margin-bottom: 32px; }
   .card__image {
-    max-width: 100%;
-    max-height: 100%; }
+    width: 100%;
+    height: 100%; }
   .card .title {
     padding: 16px; }
   .card .title__main {
@@ -823,12 +813,8 @@ button.swiper-pagination-bullet {
   justify-content: center;
   background: rgba(250, 250, 250, 0.75) url(https://www.transparenttextures.com/patterns/double-lined.png); }
   .my-modal__wrapper {
-    position: relative;
-    box-sizing: border-box;
-    width: -webkit-calc(100vw - 50px);
-    width: calc(100vw - 50px);
     max-width: 900px;
-    max-height: 95vh;
+    max-height: 90%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -858,7 +844,7 @@ button.swiper-pagination-bullet {
     align-items: center;
     flex-basis: -webkit-calc(50% - 32px);
     flex-basis: calc(50% - 32px);
-    padding: 16px; }
+    padding: 0 16px; }
     .my-modal__info .title__main {
       position: relative;
       margin-bottom: 4rem; }
@@ -918,90 +904,46 @@ button.swiper-pagination-bullet {
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
-    padding: 7.8vw 0;
+    padding: 5vw 0;
     background-color: #151b28; }
+    .main-slider .slide .svg-shadow {
+      -webkit-filter: drop-shadow(0 0 30px #090909);
+      filter: drop-shadow(0 0 30px #090909); }
     .main-slider .slide--one {
       background-color: #161b29; }
     .main-slider .slide--two {
       background-color: #28151e; }
     .main-slider .slide--three {
       background-color: #231528; }
-    .main-slider .slide__text-wrapper {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center; }
-    .main-slider .slide__text {
-      color: #1e2536;
-      text-shadow: 0 0 55px #121212; }
-      .main-slider .slide__text--details, .main-slider .slide__text--perfection {
-        padding-left: 2.8vw;
-        text-align: center;
-        font: 5.2vw/0.7 "Montserrat-Bold", serif; }
-      .main-slider .slide__text--details {
-        margin-bottom: -3.6vw; }
-      .main-slider .slide__text--perfection {
-        margin-top: -0.8vw;
-        margin-bottom: 4vw; }
-      .main-slider .slide__text--ma, .main-slider .slide__text--ke {
-        font: 9.6vw/0.5 "Montserrat-Bold", serif; }
-      .main-slider .slide__text--ma {
-        margin-right: -3.2vw; }
-      .main-slider .slide__text--ke {
-        margin-left: -1.6vw; }
-    .main-slider .slide__image-wrapper {
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center;
-      max-width: 30.4vw; }
-    .main-slider .slide__image {
-      max-width: 100%;
-      max-height: 100%;
-      -webkit-filter: drop-shadow(16px 3px 35px rgba(0, 0, 0, 0.65));
-      filter: drop-shadow(16px 3px 35px rgba(0, 0, 0, 0.65)); }
-    .main-slider .slide__caption {
-      position: relative;
-      font: 1.5rem/1.5 "CrimsonText-Italic", serif;
-      text-align: center;
-      color: #485471; }
-      .main-slider .slide__caption:after {
-        position: absolute;
-        display: block;
-        width: 1rem;
-        height: 2.8rem;
-        content: '';
-        background: url(../../img/slide-arrow.png) center/100% no-repeat;
-        -webkit-transform: translate(-webkit-calc(50vw - 0.5rem), 2.2rem);
-        transform: translate(calc(50vw - 0.5rem), 2.2rem); }
-  .main-slider__booking-link {
+  .main-slider__booking-button {
     position: absolute;
-    top: 77%;
-    right: 16px;
+    bottom: 13%;
+    right: 1.5%;
     z-index: 2;
     display: block;
-    padding: 25px 55px;
     border: solid 1px #263045;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .main-slider__booking-button:hover {
+      border: solid 1px #d89b64; }
+  .main-slider__booking-link {
+    display: block;
+    padding: 25px 55px;
     font: 1rem "Montserrat-Bold", serif;
     color: #d89b64;
-    cursor: pointer;
     text-decoration: none;
     -webkit-transition: .2s;
     transition: .2s;
     letter-spacing: 0.4px; }
     .main-slider__booking-link:hover {
-      border: solid 1px #d89b64;
       color: #fff; }
   .main-slider .swiper-button-prev,
   .main-slider .swiper-button-next {
-    top: -webkit-calc(38%);
-    top: calc(38%);
-    width: 2.9vw;
-    height: 5.7vw;
+    top: 38%;
+    width: 3%;
+    height: 11%;
     background: url(../../img/arrow-left.png) center/cover no-repeat;
     cursor: pointer;
     opacity: .75;
@@ -1015,8 +957,8 @@ button.swiper-pagination-bullet {
     transform: rotate(180deg); }
   .main-slider .swiper-pagination {
     position: absolute;
-    top: 58%;
-    left: 16px;
+    bottom: 14%;
+    left: 1.5%;
     z-index: 2;
     display: -webkit-box;
     display: flex;
@@ -1025,10 +967,10 @@ button.swiper-pagination-bullet {
     flex-direction: column;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    height: 15.2vw; }
+    height: 28%; }
     .main-slider .swiper-pagination-bullet {
       position: relative;
-      padding: 0.8vw 0.8vw 0.8vw 0;
+      padding: 1% 1% 1% 0;
       font: 1rem "Montserrat-Bold", serif;
       color: #fff;
       background: transparent;
@@ -1130,7 +1072,7 @@ button.swiper-pagination-bullet {
           background-color: #fff; }
       .offers .item--main .title__caption {
         color: #8b909d; }
-  .offers__button {
+  .offers__link {
     margin: 0 auto;
     width: 237px;
     padding: 14px 0;
@@ -1140,14 +1082,14 @@ button.swiper-pagination-bullet {
     cursor: pointer;
     -webkit-transition: .2s;
     transition: .2s; }
-    .offers__button:hover {
+    .offers__link:hover {
       border-bottom: solid 1px #d89b64;
       padding: 14px; }
-      .offers__button:hover a {
+      .offers__link:hover a {
         color: #151b28; }
-    .offers__button:focus, .offers__button:active {
+    .offers__link:focus, .offers__link:active {
       outline: none; }
-    .offers__button a {
+    .offers__link a {
       font: 1.125rem "Montserrat-Bold", serif;
       letter-spacing: 1.4px;
       color: #d89b64;

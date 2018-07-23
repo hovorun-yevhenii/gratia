@@ -12,117 +12,50 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 7.8vw 0;
+    padding: 5vw 0;
     background-color: $main-dark;
 
-    &--one {
-      background-color: #161b29
-    }
-    &--two {
-      background-color: #28151e
-    }
-    &--three {
-      background-color: #231528
-    }
+    .svg-shadow { filter: drop-shadow(0 0 30px #090909) }
+    &--one   { background-color: #161b29 }
+    &--two   { background-color: #28151e }
+    &--three { background-color: #231528 }
+  }
 
-    &__text-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  &__booking-button {
+    position: absolute;
+    bottom: 13%;
+    right: 1.5%;
+    z-index: 2;
+    display: block;
+    border: solid 1px #263045;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
 
-    &__text {
-      //TODO может его стоит вынести в переменную
-      color: #1e2536;
-      text-shadow: 0 0 55px #121212;
-
-      &--details,
-      &--perfection {
-        //TODO поизбавлятся от магических дробей
-        padding-left: 2.8vw;
-        text-align: center;
-        font: 5.2vw/0.7 $ff-montserrat;
-      }
-
-      &--details {
-        margin-bottom: -3.6vw;
-      }
-      &--perfection {
-        margin-top: -0.8vw;
-        margin-bottom: 4vw
-      }
-
-      &--ma,
-      &--ke {
-        font: 9.6vw/0.5 $ff-montserrat;
-      }
-
-      &--ma {
-        margin-right: -3.2vw;
-      }
-      &--ke {
-        margin-left: -1.6vw;
-      }
-    }
-
-    &__image-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 30.4vw;
-    }
-
-    &__image {
-      max-width: 100%;
-      max-height: 100%;
-      filter: drop-shadow(16px 3px 35px rgba(0, 0, 0, 0.65));
-    }
-
-    &__caption {
-      position: relative;
-      font: 1.5rem/1.5 $ff-crimson;
-      text-align: center;
-      color: #485471;
-
-      &:after {
-        position: absolute;
-        display: block;
-        width: 1rem;
-        height: 2.8rem;
-        content: '';
-        background: url(../../img/slide-arrow.png) center/100% no-repeat;
-        transform: translate(calc(50vw - 0.5rem), 2.2rem);
-      }
+    &:hover {
+      border: solid 1px $main-tan;
     }
   }
 
   &__booking-link {
-    position: absolute;
-    //TODO топ в процентах, справа в пикселях, может стоит оттолкнуться от ботома и привести все к одним единицам
-    top: 77%;
-    right: 16px;
-    z-index: 2;
     display: block;
     padding: 25px 55px;
-    border: solid 1px #263045;
     font: 1rem $ff-montserrat;
     color: $main-tan;
-    cursor: pointer;
     text-decoration: none;
     transition: .2s;
     letter-spacing: 0.4px;
 
     &:hover {
-      border: solid 1px $main-tan;
       color: #fff;
     }
   }
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: calc(38%);
-    width: 2.9vw;
-    height: 5.7vw;
+    top: 38%;
+    width: 3%;
+    height: 11%;
     background: url(../../img/arrow-left.png) center/cover no-repeat;
     cursor: pointer;
     opacity: .75;
@@ -139,18 +72,17 @@
 
   .swiper-pagination {
     position: absolute;
-    top: 58%;
-    left: 16px;
+    bottom: 14%;
+    left: 1.5%;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //TODO тут та же фигня что и везде, дальше повторятся не буду, ты значешь что нужно будет делать
-    height: 15.2vw;
+    height: 28%;
 
     &-bullet {
       position: relative;
-      padding: 0.8vw 0.8vw 0.8vw 0;
+      padding: 1% 1% 1% 0;
       font: 1rem $ff-montserrat;
       color: #fff;
       background: transparent;

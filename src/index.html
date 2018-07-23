@@ -17,15 +17,12 @@
 
 <div class="main-slider">
     <div class="header">
-        <!--//TODO тут можно избавиться от одной вложености, 100%-->
-        <div class="header__logo">
-            <a href="./index.html" class="header__link-wrapper">
-                <div class="header__picture">
-                    <img src="./img/logo-fork.png" alt="logo">
-                </div>
-                <span class="header__brand">Gratia</span>
-            </a>
-        </div>
+        <a href="./index.html" class="header__link-wrapper">
+            <div class="header__picture">
+                <img src="./img/logo-fork.png" alt="logo">
+            </div>
+            <span class="header__brand">Gratia</span>
+        </a>
         <ul class="header__nav">
             <li class="header__nav-item"><a href="#" class="header__link">About</a></li>
             <li class="header__nav-item"><a href="./menu.html" class="header__link">Menu</a></li>
@@ -33,51 +30,24 @@
             <li class="header__nav-item"><a href="#" class="header__link">Contact</a></li>
         </ul>
     </div>
+
+
     <div class="swiper-container">
 
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="slide slide--one">
-                    <div class="slide__text slide__text--details">DETAILS</div>
-                    <div class="slide__text-wrapper">
-                        <!--TODO может тут стоит попробовать сделать по-другому, ведь можно избавиться от магический
-                        TODO дробных vw-->
-                        <div class="slide__text slide__text--ma">MA</div>
-                        <div class="slide__image-wrapper">
-                            <img src="./img/header-board.png" alt="" class="slide__image">
-                        </div>
-                        <div class="slide__text slide__text--ke">KE</div>
-                    </div>
-                    <div class="slide__text slide__text--perfection">PERFECTION</div>
-                    <p class="slide__caption">and perfection is  not a detail</p>
+                    <svg width="100%" viewBox="0 200 2000 880" class="svg-shadow"><use href="#slide"></use></svg>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="slide slide--two">
-                    <div class="slide__text slide__text--details">DETAILS</div>
-                    <div class="slide__text-wrapper">
-                        <div class="slide__text slide__text--ma">MA</div>
-                        <div class="slide__image-wrapper">
-                            <img src="./img/header-board.png" alt="" class="slide__image">
-                        </div>
-                        <div class="slide__text slide__text--ke">KE</div>
-                    </div>
-                    <div class="slide__text slide__text--perfection">PERFECTION</div>
-                    <p class="slide__caption">and perfection is  not a detail</p>
+                    <svg width="100%" viewBox="0 200 2000 880" class="svg-shadow"><use href="#slide"></use></svg>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="slide slide--three">
-                    <div class="slide__text slide__text--details">DETAILS</div>
-                    <div class="slide__text-wrapper">
-                        <div class="slide__text slide__text--ma">MA</div>
-                        <div class="slide__image-wrapper">
-                            <img src="./img/header-board.png" alt="" class="slide__image">
-                        </div>
-                        <div class="slide__text slide__text--ke">KE</div>
-                    </div>
-                    <div class="slide__text slide__text--perfection">PERFECTION</div>
-                    <p class="slide__caption">and perfection is  not a detail</p>
+                    <svg width="100%" viewBox="0 200 2000 880" class="svg-shadow"><use href="#slide"></use></svg>
                 </div>
             </div>
         </div>
@@ -87,9 +57,10 @@
     </div>
 
     <div class="swiper-pagination"></div>
-    <!--TODO мне кажется что это кнопка обернутая в ссылку-->
-    <a class="main-slider__booking-link" href="./booking.html">BOOK A TABLE</a>
 
+    <button class="main-slider__booking-button">
+        <a class="main-slider__booking-link" href="./booking.html">BOOK A TABLE</a>
+    </button>
 </div>
 
 <!-- =================================================================================== -->
@@ -132,8 +103,7 @@
         </div>
     </div>
 
-    <!--TODO offers__link больше бы подошло но не критично важно-->
-    <div class="offers__button">
+    <div class="offers__link">
         <a href="#">CHECK OTHER OFFERS</a>
     </div>
 </div>
@@ -196,6 +166,26 @@
         <li><a class="footer__link footer__link--insta" href="#"></a></li>
     </ul>
 </div>
+
+<!-- =================================================================================== -->
+<!--                                    REUSABLE SVG                                     -->
+<!-- =================================================================================== -->
+
+<svg style="display: none">
+    <g id="slide">
+        <g fill="#1e2536" font-family="Montserrat-Bold">
+            <text x="1000" y="313" font-size="128" text-anchor="middle">DETAILS</text>
+            <text x="418"  y="617" font-size="183">MA</text>
+            <text x="1358" y="617" font-size="183">KE</text>
+            <text x="1000" y="871" font-size="120" text-anchor="middle">PERFECTION</text>
+        </g>
+        <image href="./img/header-board.png" x="690" y="230"></image>
+        <text font-family="CrimsonText-Italic" x="1000" y="990" font-size="24" text-anchor="middle" fill="#485471">
+            and perfection is  not a detail
+        </text>
+        <path stroke="#485471" stroke-width="1" d="M 1000,1015 v44 l-7,-7 l7,7 l7,-7 l-7,7"></path>
+    </g>
+</svg>
 
 <script src="./public/script.js"></script>
 </body>
