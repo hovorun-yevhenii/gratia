@@ -21,7 +21,20 @@ html {
   font-size: 14px;
 }
 
-//TODO: сделать контейнер так чтобы он выполнял функцию свою, тоесть ограничивал ширину
 .container {
+  max-width: 1920px;
   padding: 32px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
 }

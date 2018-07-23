@@ -26,3 +26,17 @@
     color: $blue-grey;
   }
 }
+
+@media (max-width: 500px) {
+  .title {
+    padding: 1rem 0;
+
+    &__main {
+      font: 2rem/1.76 $ff-montserrat;
+    }
+
+    &__background {
+      font: 10rem/.71 $ff-selima;
+    }
+  }
+}

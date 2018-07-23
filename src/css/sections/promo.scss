@@ -4,7 +4,7 @@
   &__wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -20,9 +20,8 @@
     align-items: center;
     min-height: 250px;
     padding: 16px;
-    //TODO зачем им марджин топ если от заголовка вроде как есть боттом, поче у не сделать в одну сторону
-    margin: 16px 0;
-    flex-basis: calc(32% - 32px);
+    margin: 16px;
+    flex-basis: calc(32% - 48px);
     background-color: #f8f8f8;
     transition: .3s;
     cursor: default;
@@ -50,12 +49,43 @@
 
     &:hover {
       padding: 32px 16px;
-      margin: 0;
+      margin: 0 16px;
       background-color: $main-dark;
 
       .item__background-number {
         color: #1e2536;
         text-shadow: 0 0 55px #131824;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .promo {
+    padding: 50px 0;
+
+    .item {
+      flex-basis: 75%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .promo {
+    padding: 20px 0;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    .item {
+      flex-basis: 100%;
+      margin: 16px 0;
+      padding: 12px;
+
+      &:hover {
+        margin: 16px 0;
+        padding: 12px;
       }
     }
   }

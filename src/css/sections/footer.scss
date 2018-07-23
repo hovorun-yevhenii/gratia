@@ -81,3 +81,14 @@
   }
 }
 
+@media (max-width: 480px){
+  .footer {
+    &__caption {
+      margin-bottom: 32px;
+    }
+
+    &__socials {
+      margin: 0 auto 32px;
+    }
+  }
+}

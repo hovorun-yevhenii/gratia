@@ -126,3 +126,16 @@
     }
   }
 }
+
+@media (max-width: 820px) {
+  .offers {
+    &__wrapper {
+      flex-flow: column wrap;
+      justify-content: center;
+
+      .item {
+        margin: 16px;
+      }
+    }
+  }
+}
