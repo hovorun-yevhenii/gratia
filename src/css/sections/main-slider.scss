@@ -32,11 +32,13 @@
     }
 
     &__text {
+      //TODO может его стоит вынести в переменную
       color: #1e2536;
       text-shadow: 0 0 55px #121212;
 
       &--details,
       &--perfection {
+        //TODO поизбавлятся от магических дробей
         padding-left: 2.8vw;
         text-align: center;
         font: 5.2vw/0.7 $ff-montserrat;
@@ -96,6 +98,7 @@
 
   &__booking-link {
     position: absolute;
+    //TODO топ в процентах, справа в пикселях, может стоит оттолкнуться от ботома и привести все к одним единицам
     top: 77%;
     right: 16px;
     z-index: 2;
@@ -142,6 +145,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    //TODO тут та же фигня что и везде, дальше повторятся не буду, ты значешь что нужно будет делать
     height: 15.2vw;
 
     &-bullet {

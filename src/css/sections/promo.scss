@@ -20,6 +20,7 @@
     align-items: center;
     min-height: 250px;
     padding: 16px;
+    //TODO зачем им марджин топ если от заголовка вроде как есть боттом, поче у не сделать в одну сторону
     margin: 16px 0;
     flex-basis: calc(32% - 32px);
     background-color: #f8f8f8;

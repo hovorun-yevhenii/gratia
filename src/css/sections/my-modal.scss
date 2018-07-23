@@ -11,8 +11,10 @@
   &__wrapper {
     position: relative;
     box-sizing: border-box;
+    //TODO помоему max-width будет достаточно
     width: calc(100vw - 50px);
     max-width: 900px;
+    //TODO а с такой высотой на респонзиве будут проблемы, модалки вообще стоит разгонять падингами
     max-height: 95vh;
     display: flex;
     flex-flow: row wrap;
@@ -55,7 +57,7 @@
         background-color: $light-gray;
       }
     }
-
+    //TODO тут надо внимательно проверить этот блок, с ним явно что-то не так
     .components {
       display: flex;
       padding: 50px 0;

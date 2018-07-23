@@ -1,4 +1,5 @@
 .card {
+  //TODO max-width тут точно нужен?
   max-width: 562px;
   margin: 16px;
   box-shadow: 0 0 150px 0 $light-gray;
@@ -6,9 +7,11 @@
   cursor: pointer;
 
   &:hover {
+    //TODo внимательно посмотри что происходит со шрифтом, думаю что можно буз скейла обойтись
     transform: scale(1.02);
   }
 
+  //TODO еще внимательно посмотри картинки не одной высоты, это можно исправлять несколькими способами, разберись
   &__image-wrapper {
     display: flex;
     align-items: center;
