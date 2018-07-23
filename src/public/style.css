@@ -926,7 +926,7 @@ button.swiper-pagination-bullet {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     background-color: #fff; }
   .my-modal__image-wrapper {
     display: -webkit-box;
@@ -995,6 +995,40 @@ button.swiper-pagination-bullet {
   .my-modal__total-cost {
     font: 1.5rem "CrimsonText-Italic", serif;
     color: #8b909d; }
+
+@media (max-width: 680px) {
+  .my-modal__info .title__main {
+    margin-bottom: 2rem; }
+    .my-modal__info .title__main:after {
+      display: none; }
+  .my-modal .components {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 0;
+    text-align: center; }
+  .my-modal__image-wrapper {
+    max-height: 100%; } }
+
+@media (max-width: 480px) {
+  .my-modal__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .my-modal__image-wrapper img {
+    max-height: 200px; }
+  .my-modal__info .title__main {
+    margin-bottom: 2rem; }
+    .my-modal__info .title__main:after {
+      display: none; }
+  .my-modal .components {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 0;
+    text-align: center; }
+  .my-modal__image-wrapper {
+    max-height: 100%; } }
 
 .main-slider {
   position: relative; }

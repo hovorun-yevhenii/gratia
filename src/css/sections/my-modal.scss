@@ -12,7 +12,7 @@
     max-width: 900px;
     max-height: 90%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     background-color: #fff;
   }
 
@@ -90,5 +90,66 @@
   &__total-cost {
     font: 1.5rem $ff-crimson;
     color: $blue-grey;
+  }
+}
+
+@media (max-width: 680px) {
+  .my-modal {
+
+    &__info {
+      .title__main {
+        margin-bottom: 2rem;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .components {
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__image-wrapper {
+      max-height: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .my-modal {
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__image-wrapper {
+      img {
+        max-height: 200px;
+      }
+    }
+
+    &__info {
+      .title__main {
+        margin-bottom: 2rem;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .components {
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__image-wrapper {
+      max-height: 100%;
+    }
   }
 }
