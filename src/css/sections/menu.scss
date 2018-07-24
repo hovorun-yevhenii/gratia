@@ -1,4 +1,6 @@
 .menu {
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 90px 0;
 
   .title {
@@ -33,6 +35,10 @@
 
       &__image-wrapper {
         height: 220px;
+      }
+
+      &__image {
+        height: auto;
       }
 
       .title {
